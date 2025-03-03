@@ -1,7 +1,7 @@
 // const dbConnect = require('./mongodb');
 import dbConnect from './mongodb';
 
-const insert = async () => {
+const insertData = async () => {
     const db = await dbConnect();
     const result = await db.insert(
         [
@@ -16,4 +16,4 @@ const insert = async () => {
     console.log(result.acknowledged)
 }
 
-insert();
+insertData();
